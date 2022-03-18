@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-kubernetes-loadbalancer
+  labels:
+    {{- include "hello-kubernetes.labels" . | nindent 4 }}
+spec:
+  type: LoadBalancer
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: {{ .Values.container.port }}
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/instance: minhaapp
+    #app.kubernetes.io/name: bar
