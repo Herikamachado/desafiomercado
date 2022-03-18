@@ -3,6 +3,7 @@
 Este repositorio atende ao desafio feito pelo Mercado Bitcoin para a vaga de SRE
 
 no repo https://github.com/Herikamachado/desafiomercado/tree/main/k8s/gke coloquei o terraform que realiza a criaçao do cluster 
+As evidencias foram inclusas https://github.com/Herikamachado/desafiomercado/tree/main/k8s/evidencias
 
 Helm
 no repo contem os arquivos que alterei
